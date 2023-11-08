@@ -11,17 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: borales/actions-yarn@v4
         with:
-          version: 7
+          cmd: install
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: pnpm
+          cache: yarn
 
-      - run: pnpm install --frozen-lockfile
+      - run: yarn install --frozen-lockfile
       - name: Create Release Pull request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run build
+          publish: yarn run build
