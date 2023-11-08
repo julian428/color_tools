@@ -1,12 +1,14 @@
 {
   "name": "@julian428/color_tools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "dist/index.ts",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "homepage": "https://github.com/julian428/color_tools",
-  "exports": ["./dist"],
+  "exports": [
+    "./dist"
+  ],
   "scripts": {
     "test": "jest --verbose",
     "build": "tsup index.ts --format cjs,esm --dts",
