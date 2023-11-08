@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: borales/actions-yarn@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           cmd: install
       - uses: actions/setup-node@v3
         with:
