@@ -1,5 +1,11 @@
 # color_tools
 
+## 0.1.2
+
+### Patch Changes
+
+- f03fe69: changed the exports
+
 ## 1.0.0
 
 ### Major Changes
