@@ -1,6 +1,6 @@
 {
   "name": "color_tools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.ts",
   "module": "dist/index.mjs",
