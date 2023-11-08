@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: borales/actions-yarn@v4
+      - uses: pnpm/action-setup@v2
         with:
-          cmd: install
+          version: 7
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: yarn
+          cache: pnpm
 
-      - run: yarn install --frozen-lockfile
-      - run: yarn run lint && yarn run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint && pnpm run build
