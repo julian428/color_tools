@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: yarn install --frozen-lockfile
       - name: Create Release Pull request or Publish
@@ -26,4 +25,5 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: yarn run build
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
