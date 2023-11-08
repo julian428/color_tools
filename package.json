@@ -6,7 +6,6 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "homepage": "https://github.com/julian428/color_tools",
-  "exports": ["./dist"],
   "scripts": {
     "test": "jest --verbose",
     "build": "tsup index.ts --format cjs,esm --dts",
